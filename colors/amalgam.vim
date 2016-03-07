@@ -344,6 +344,8 @@ hi link rubyParens                    Operator
 hi link rubyBrackets                  Operator
 hi link rubyCurlyBrackets             Operator
 hi link rubyCurlyBlockDelimiter       Operator
+hi link rubySymbol                    Identifier
+hi link rubyBoolean                   RubyConstant
 
 " {X/HT}ML
 hi link xmlTagName                    Function
@@ -354,3 +356,12 @@ hi link xmlEqual                      Operator
 " JavaScript
 hi link jsBraces                      Operator
 hi link jsFuncCall                    Statement
+hi link jsFuncCall                    Statement
+hi link jsFunctionKey                 Statement
+hi link jsObjectKey                   String
+hi link jsReturn                      Identifier
+hi link jsFuncParens                  Operator
+hi link jsThis                        Constant
+hi link jsGlobalObjects               Function
+hi link jsFuncName                    Statement
+hi link jsFuncArgs                    RubyConstant
