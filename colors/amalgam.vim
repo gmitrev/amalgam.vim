@@ -257,7 +257,8 @@ exe "hi! Normal"        .s:fg_foreground  .s:bg_normal      .s:fmt_none
 exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_none
 
 exe "hi! Constant"        .s:fg_red         .s:bg_none        .s:fmt_none
-exe "hi! RubyConstant"    .s:fg_orange      .s:bg_none        .s:fmt_none
+exe "hi! rubyConstant"    .s:fg_red      .s:bg_none        .s:fmt_none
+exe "hi! Orange"          .s:fg_orange      .s:bg_none        .s:fmt_none
 exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
 "   Character"
 "   Number"
@@ -338,14 +339,16 @@ hi link rubyRailsARValidationMethod   Statement
 hi link rubyRailsARMethod             Statement
 hi link rubyRailsARCallbackMethod     Statement
 hi link rubyRailsARClassMethod        Statement
-hi link rubyInstanceVariable          Identifier
-hi link rubyConstant                  Identifier
+hi link rubyInstanceVariable          Orange
+" hi link rubyConstant                  Identifier
 hi link rubyParens                    Operator
 hi link rubyBrackets                  Operator
 hi link rubyCurlyBrackets             Operator
 hi link rubyCurlyBlockDelimiter       Operator
 hi link rubySymbol                    Identifier
-hi link rubyBoolean                   RubyConstant
+hi link rubyBoolean                   Constant
+hi link rubyPseudoVariable            Constant
+hi link rubyConstant                  Error
 
 " {X/HT}ML
 hi link xmlTagName                    Function
@@ -364,4 +367,4 @@ hi link jsFuncParens                  Operator
 hi link jsThis                        Constant
 hi link jsGlobalObjects               Function
 hi link jsFuncName                    Statement
-hi link jsFuncArgs                    RubyConstant
+hi link jsFuncArgs                    Orange
